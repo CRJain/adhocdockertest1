@@ -1,0 +1,31 @@
+# Question 1
+1. Create Dockerfile as follows:
+
+    from alpine
+    maintainer chinmayrjain1@gmail.com
+    run cat >> question1.txt
+    cmd /bin/sh
+    cmd date +%T >> question1.txt && cat question1.txt
+
+2. Run command : docker build -t alpine:chinmay .
+3. Run command : docker run -it --name chinmayc1q1 alpine:chinmay
+   Output : 13:18:23
+4. Run command : docker start -i e3b3f44f085b
+   Output : 13:18:23
+            13:22:17
+
+# Question 2
+1. Run command : docker build -t adhoc:chinmay https://github.com/redashu/summer2020dockertest.git
+  # creates an image
+2. Run command : docker tag adhoc:chinmay crjain/adhoc:chinmay
+3. Run command : doker login
+  # login to docker hub
+4. Run command : docker push crjain/adhoc:chinmay
+  # pushes image to docker hub
+5. Run command : docker logout
+  # to logout from docker hub
+Docker Hub image link (to pull) : docker pull crjain/adhoc
+
+# Question 3
+1. Run command : docker run -itd --name chinmayc3q3 -p 1026 dockerashu/ckad:v2
+   Output: 5 docker keywords
