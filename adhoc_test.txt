@@ -27,5 +27,5 @@
 Docker Hub image link (to pull) : docker pull crjain/adhoc
 
 # Question 3
-1. Run command : docker run -itd --name chinmayc3q3 -p 1026:80 dockerashu/ckad:v2
+1. Run command : docker run -d --name chinmayc3q3 -p 1026:80 dockerashu/ckad:v2
    Output: 7 docker keywords
